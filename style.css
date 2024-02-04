@@ -1,13 +1,10 @@
 /*general Styles for Etch A Sketch*/
 
-/* TODO add in main formats for H1 intro and form */
-
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 
 #canvas {
   border: 3px solid black;
@@ -33,4 +30,3 @@ body {
 .cell:hover {
   background-color: black;
 }
-

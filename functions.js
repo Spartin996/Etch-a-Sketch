@@ -21,7 +21,6 @@ function createCanvas(size) {
   }
 }
 
-// TODO add a param to fill in with color X or generate a random 1
 function darkenCell(element) {
   //get the current colour of the cell
   let currentColor = element.getAttribute("style");
@@ -54,4 +53,9 @@ function generateRandomColorValue() {
   return r + ", " + g + ", " + b + ", ";
 }
 
-createCanvas(150);
+function startCanvas() {
+  let sizeBox = document.querySelector("#size");
+  let size = sizeBox.value;
+
+  createCanvas(size);
+}

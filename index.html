@@ -5,19 +5,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>
-      Etch A Sketch
-    </h1>
+    <h1>Etch A Sketch</h1>
     <p>This is the Etch a Sketch project from The Odin Project.</p>
-    <p>Enter how many Pixels you want on each side: <input type="number" id="size" min="2" max="150"></p>
-    <p>What colour do you want: <input type=color id=colour></p>
-    <button onclick="createCanvas(10)">Draw Grid</button>
-    <br>
+    <p>
+      Enter how many Pixels you want on each side:
+      <input type="number" id="size" min="2" max="150" value="50" />
+    </p>
+    <button onclick="startCanvas()">Draw Grid</button>
+    <br />
 
-    <div id="canvas">
-      
-    </div>
-
+    <div id="canvas"></div>
+    <footer>
+      Copyright Martin @spartin996 Github<br />
+      Designed and developed as part of The Odin Project <br />
+    </footer>
     <script src="functions.js"></script>
   </body>
 </html>
